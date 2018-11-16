@@ -1,0 +1,20 @@
+<section class="page">
+
+<header> </header>
+<h1>Please register to use our sweet music-related service!</h1>
+
+<form action="<%= users_url %>" method="post">
+  <input type="hidden" name="authenticity_token" value="<%= form_authenticity_token %>">
+    <label for="Email Address"> Email Address:
+      <input type="text" name="user[email]" value="<%= @user.email %>">
+    </label>
+  <br>
+    <label for="Password"> Password:
+      <input type="text" name="user[password]" value="<%= @user.password %>">
+    </label>
+  <br>
+  <input type="submit" value="Register New User">
+</form>
+
+
+</section>
